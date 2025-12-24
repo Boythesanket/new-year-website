@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const NewYear = ({ onFinish }) => {
-  const targetDate = new Date("2026-01-01T00:00:00");
+  const targetDate = new Date(Date.now() + 10 * 1000); // ⏱ test
   const [timeLeft, setTimeLeft] = useState({});
   const [isNewYear, setIsNewYear] = useState(false);
 
